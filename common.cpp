@@ -23,6 +23,8 @@ std::string get_search_type_name(Search_Types t)
             return "Timing"; break;
         case PROVA:
             return "Stocazzo";break;
+        case PROVA2:
+            return "fanculo";break;
         default:
             return "Error"; break;
     }

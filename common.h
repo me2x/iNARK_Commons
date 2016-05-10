@@ -9,6 +9,7 @@ enum Search_Layers{
 enum Search_Types{
     TIMING,
     PROVA,
+    PROVA2,
     SEARCH_TYPE_END
 };
 
