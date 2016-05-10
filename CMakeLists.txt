@@ -3,6 +3,6 @@ project(inark_commons)
 
 
 
-ADD_LIBRARY( inark_commons STATIC
+add_library ( inark_commons STATIC
        common.cpp
        )
