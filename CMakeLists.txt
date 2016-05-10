@@ -6,3 +6,4 @@ project(inark_commons)
 add_library ( inark_commons STATIC
        common.cpp
        )
+install(inark_commons)
