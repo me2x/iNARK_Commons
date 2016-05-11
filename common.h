@@ -1,3 +1,5 @@
+#ifndef INARK_COMMONS
+#define INARK_COMMONS
 #include <iostream>
 
 enum Search_Layers{
@@ -15,3 +17,6 @@ enum Search_Types{
 
 std::string get_search_layer_names(Search_Layers l);
 std::string get_search_type_name(Search_Types t);
+
+
+#endif
