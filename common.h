@@ -35,7 +35,7 @@ enum Component_Priority_Category{
     ROUND_ROBIN,
     PRIORITY,
     TDMA,
-    PRIORITY_CATEGORY_ERROR
+    HANDLING_SIZE
 };
 
 enum Component_Type{
@@ -45,7 +45,7 @@ enum Component_Type{
   PERIPHERAL,
   MEMORY,
   NOT_SPECIFIED,
-  TYPE_ERROR
+  TYPE_SIZE
 };
 
 
@@ -58,7 +58,8 @@ Component_Type int_To_Type(int i);
 Component_Priority_Category int_To_Priority_Handler(int i);
 std::string get_search_layer_names(Search_Layers l);
 std::string get_search_type_name(Search_Types t);
-    
+std::string get_component_type_name(Component_Type t);    
+std::string get_component_priority_type(Component_Priority_Category c);
 }
 
 #endif

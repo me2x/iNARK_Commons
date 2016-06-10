@@ -112,7 +112,7 @@ Component_Type commons::int_To_Type(int i){
         return MEMORY;break;
 
     default:
-        return TYPE_ERROR;break;
+        return TYPE_SIZE;break;
     }
 }
 Component_Priority_Category commons::int_To_Priority_Handler(int i){
@@ -128,6 +128,48 @@ switch(i)
         return TDMA;break;
 
     default:
-        return PRIORITY_CATEGORY_ERROR;break;
+        return HANDLING_SIZE;break;
+    }
+}
+
+
+std::string commons::get_component_type_name(Component_Type t){
+    switch(t)
+    {
+    case PROCESSOR:
+        return "processor";break;
+
+    case BUS:
+        return "bus";break;
+
+    case BRIDGE:
+        return "bridge";break;
+
+    case PERIPHERAL:
+        return "peripheral";break;
+        
+    case MEMORY:
+        return "memory";break;
+
+    default:
+        return "Error"; break;
+    }
+}
+
+
+std::string commons::get_component_priority_type(Component_Priority_Category c){
+switch(c)
+    {
+    case ROUND_ROBIN:
+        return "round robin";break;
+
+    case PRIORITY:
+        return "priority";break;
+
+    case TDMA:
+        return "TDMA";break;
+
+    default:
+        return "Error"; break;
     }
 }
