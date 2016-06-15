@@ -29,6 +29,30 @@ std::string commons::get_search_type_name(Search_Types t)
             return "Error"; break;
     }
 }
+int commons::Layer_to_int(Layer l)
+{
+ switch(l)
+    {
+    case FUNCTION:
+        return 1;
+        break;
+    case TASK:
+        return 2;
+        break;
+    case CONTROLLER:
+        return 3;
+        break;
+    case RESOURCE:
+        return 4;
+        break;
+    case PHYSICAL:
+        return 5;
+        break;
+    default:
+        return -1;
+        break;
+    }
+}
 
 Layer commons::int_to_Layer(int i){
     switch(i)

@@ -52,6 +52,7 @@ enum Component_Type{
 
 namespace commons{
 Layer int_to_Layer(int i);
+int Layer_to_int(Layer l);
 Priority int_to_Priority(int i);
 std::string Layer_to_String(Layer l);
 Component_Type int_To_Type(int i);
