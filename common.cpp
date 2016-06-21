@@ -80,13 +80,13 @@ Layer commons::int_to_Layer(int i){
 Priority commons::int_to_Priority(int i){
     switch(i)
     {
-    case 1:
+    case 0:
         return NO_PRIORITY;
         break;
-    case 2:
+    case 1:
         return MISSION_CRITICAL;
         break;
-    case 3:
+    case 2:
         return SAFETY_CRITICAL;
         break;
     default:
@@ -120,19 +120,19 @@ std::string commons::Layer_to_String(Layer l){
 Component_Type commons::int_To_Type(int i){
     switch(i)
     {
-    case 1:
+    case 0:
         return PROCESSOR;break;
 
-    case 2:
+    case 1:
         return BUS;break;
 
-    case 3:
+    case 2:
         return BRIDGE;break;
 
-    case 4:
+    case 3:
         return PERIPHERAL;break;
         
-    case 5:
+    case 4:
         return MEMORY;break;
 
     default:
@@ -142,13 +142,13 @@ Component_Type commons::int_To_Type(int i){
 Component_Priority_Category commons::int_To_Priority_Handler(int i){
 switch(i)
     {
-    case 1:
+    case 0:
         return ROUND_ROBIN;break;
 
-    case 2:
+    case 1:
         return PRIORITY;break;
 
-    case 3:
+    case 2:
         return TDMA;break;
 
     default:
@@ -160,13 +160,13 @@ int commons::Priority_Handler_To_Int(Component_Priority_Category i)
 switch(i)
     {
     case ROUND_ROBIN:
-        return 1;break;
+        return 0;break;
 
     case PRIORITY:
-        return 2;break;
+        return 1;break;
 
     case TDMA:
-        return 3;break;
+        return 2;break;
 
     default:
         return -1;break;
