@@ -155,6 +155,23 @@ switch(i)
         return HANDLING_SIZE;break;
     }
 }
+int commons::Priority_Handler_To_Int(Component_Priority_Category i)
+{
+switch(i)
+    {
+    case ROUND_ROBIN:
+        return 1;break;
+
+    case PRIORITY:
+        return 2;break;
+
+    case TDMA:
+        return 3;break;
+
+    default:
+        return -1;break;
+    }
+}
 
 
 std::string commons::get_component_type_name(Component_Type t){
